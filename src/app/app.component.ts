@@ -13,7 +13,6 @@ export class AppComponent {
     {'user':7, 'company':'l.l.b.r', 'first_name':'ives'},
   ];
 
-  
 
   constructor(private api:ApiService){
     this.getCollaborators();
@@ -24,7 +23,6 @@ export class AppComponent {
     data => {
       this.collaborators = data;
       
-      
     },
     error => {
       console.log('Deu um erro!');
@@ -33,3 +31,5 @@ export class AppComponent {
   };
 
 }
+
+

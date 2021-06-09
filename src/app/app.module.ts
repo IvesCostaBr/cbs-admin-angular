@@ -8,13 +8,19 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './components/templates/header/header.component';
 
 import {MatToolbarModule} from '@angular/material/toolbar';
+import { FooterComponent } from './components/templates/footer/footer.component';
+import { NavgationComponent } from './components/templates/navgation/navgation.component';
+
+import '@angular/material/sidenav'
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent
+    HeaderComponent,
+    FooterComponent,
+    NavgationComponent,
   ],
-  imports: [
+  imports: [ //TODO:sitemas de modulo padrão , quando importamos lá em cima temos que registralos em imports
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
