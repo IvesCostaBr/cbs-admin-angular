@@ -22,6 +22,7 @@ export class AppComponent {
     this.api.getAllCollaborators().subscribe(
     data => {
       this.collaborators = data;
+      console.log(this.collaborators)
       
     },
     error => {

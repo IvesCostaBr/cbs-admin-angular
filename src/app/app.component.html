@@ -2,8 +2,8 @@
 <body>
   <app-navgation></app-navgation>
   <ul>
-    <li *ngFor="let collaborator of collaborators |keyvalue" >
-      {{ collaborator.value }}
+    <li *ngFor="let collaborator of collaborators" >
+      {{ collaborator |json }}
     </li>
   </ul>
 <app-footer></app-footer>
