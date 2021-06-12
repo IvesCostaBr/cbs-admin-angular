@@ -13,6 +13,12 @@ import { NavgationComponent } from './components/templates/navgation/navgation.c
 
 import  { MatSidenavModule } from '@angular/material/sidenav';
 import  { MatListModule } from '@angular/material/list';
+import { HomeComponent } from './views/home/home.component';
+
+import  { MatCardModule } from '@angular/material/card';
+import { TaskCrudComponent } from './views/task-crud/task-crud.component';
+
+
 
 @NgModule({
   declarations: [
@@ -20,6 +26,8 @@ import  { MatListModule } from '@angular/material/list';
     HeaderComponent,
     FooterComponent,
     NavgationComponent,
+    HomeComponent,
+    TaskCrudComponent,
   ],
   imports: [ //TODO:sitemas de modulo padrão , quando importamos lá em cima temos que registralos em imports
     BrowserModule,
@@ -29,6 +37,7 @@ import  { MatListModule } from '@angular/material/list';
     MatToolbarModule,
     MatSidenavModule,
     MatListModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]

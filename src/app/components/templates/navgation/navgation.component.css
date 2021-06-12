@@ -1,8 +1,18 @@
 .sidenav{
     background-color:#ffff;
     width:200px;
+    position: fixed;
 }
 
 .sidenav i {
     padding-right: 10px;
+}
+
+.sidenav a {
+    color: blue;
+}
+
+.content {
+    padding:16px;
+    background-color: azure;
 }

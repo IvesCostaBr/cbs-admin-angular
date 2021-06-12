@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ApiService } from './api.service';
+import { ApiService } from './services/api.service';
 
 @Component({
   selector: 'app-root',
@@ -8,11 +8,7 @@ import { ApiService } from './api.service';
 })
 export class AppComponent {
   title = 'front-end';
-
-  collaborators = [
-    {'user':7, 'company':'l.l.b.r', 'first_name':'ives'},
-  ];
-
+  lista = [];
 
   constructor(private api:ApiService){
     this.getCollaborators();
@@ -21,8 +17,7 @@ export class AppComponent {
   getCollaborators = () => {
     this.api.getAllCollaborators().subscribe(
     data => {
-      this.collaborators = data;
-      console.log(this.collaborators)
+      this.lista = data;
       
     },
     error => {
