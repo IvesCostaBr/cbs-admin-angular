@@ -13,11 +13,12 @@ export class ApiService {
     );
 
 
-  constructor( private http: HttpClient) { }
+  constructor(private http: HttpClient) { }
 
-  getAllCollaborators() : Observable<any> {
+  getAllCollaborators() : Observable<any> { 
     return this.http.get(this.baseUrl + 'collaborator/', 
     {headers: this.httpsHeaders}
     );
   };
+
 }

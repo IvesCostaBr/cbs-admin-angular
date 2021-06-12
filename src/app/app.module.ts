@@ -17,6 +17,7 @@ import { HomeComponent } from './views/home/home.component';
 
 import  { MatCardModule } from '@angular/material/card';
 import { TaskCrudComponent } from './views/task-crud/task-crud.component';
+import { ForDirective } from './directives/for.directive';
 
 
 
@@ -28,6 +29,7 @@ import { TaskCrudComponent } from './views/task-crud/task-crud.component';
     NavgationComponent,
     HomeComponent,
     TaskCrudComponent,
+    ForDirective,
   ],
   imports: [ //TODO:sitemas de modulo padrão , quando importamos lá em cima temos que registralos em imports
     BrowserModule,
