@@ -1,9 +1,8 @@
 <mat-card class="home  mat-elevation-z8">
     <mat-card-title class="title" >Bem Vindo</mat-card-title>
     <mat-card-subtitle class="subtitle" >Bem vindo a nosso projeto Angular</mat-card-subtitle>
-    <ul>
-      <li *myFor="let n em [1,2,3,5,6] char 'Ives' "> {{ n }} </li>
 
-      <!-- <tag *struct="let a = $implicit" ></tag> -->
+    <ul>
+      <li *myFor="let n em ['ives', 'andre', 'pedro'] char 'Ives' "> {{ n }} </li>
     </ul>
 </mat-card>

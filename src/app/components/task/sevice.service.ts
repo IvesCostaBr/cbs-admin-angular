@@ -1,0 +1,13 @@
+import { Injectable } from '@angular/core';
+
+@Injectable({
+  providedIn: 'root'
+})
+export class SeviceService {
+
+  constructor() { }
+
+  ShowOnConsole(msg:string):void {
+    alert(msg);
+  }
+}

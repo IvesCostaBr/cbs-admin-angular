@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import {Router } from '@angular/router';
 @Component({
   selector: 'app-task-crud',
   templateUrl: './task-crud.component.html',
@@ -7,9 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TaskCrudComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
+  }
+
+  navigateToCreateTask():void {
+    this.router.navigate(['task/create'])
   }
 
 }

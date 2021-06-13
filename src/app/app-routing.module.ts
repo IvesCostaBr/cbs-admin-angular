@@ -4,13 +4,19 @@ import { RouterModule, Routes } from '@angular/router';
 import {HomeComponent} from './views/home/home.component'
 import {TaskCrudComponent} from './views/task-crud/task-crud.component'
 
+import {CreateTaskComponent} from './components/task/create-task/create-task.component';
+
 const routes: Routes = [{
   path:"",
   component: HomeComponent,
 },{
   path:"task",
   component: TaskCrudComponent,
-}];
+},{
+  path:'task/create',
+  component: CreateTaskComponent
+}
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

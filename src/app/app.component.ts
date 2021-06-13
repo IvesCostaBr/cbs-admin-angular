@@ -18,11 +18,16 @@ export class AppComponent {
     this.api.getAllCollaborators().subscribe(
     data => {
       this.lista = data;
-      
+      for(var i=0;i <data.length;i++){
+        console.log("Usuario" + data[i].user +"Empresa" + data[i].company);
+        console.log(String(data.first_name))
+      }
+
+
     },
     error => {
       console.log('Deu um erro!');
-    }  
+    }
     );
   };
 
