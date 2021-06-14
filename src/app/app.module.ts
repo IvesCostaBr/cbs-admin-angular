@@ -23,6 +23,7 @@ import { CreateTaskComponent } from './components/task/create-task/create-task.c
 import { RemoveTaskComponent } from './components/task/remove-task/remove-task.component';
 import { EditTaskComponent } from './components/task/edit-task/edit-task.component';
 import { UpdateTaskComponent } from './components/task/update-task/update-task.component';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 
 
@@ -50,6 +51,7 @@ import { UpdateTaskComponent } from './components/task/update-task/update-task.c
     MatListModule,
     MatCardModule,
     MatButtonModule,
+    MatSnackBarModule,
 
   ],
   providers: [],

@@ -5,6 +5,7 @@ import {HomeComponent} from './views/home/home.component'
 import {TaskCrudComponent} from './views/task-crud/task-crud.component'
 
 import {CreateTaskComponent} from './components/task/create-task/create-task.component';
+import { EditTaskComponent } from './components/task/edit-task/edit-task.component';
 
 const routes: Routes = [{
   path:"",
@@ -14,7 +15,10 @@ const routes: Routes = [{
   component: TaskCrudComponent,
 },{
   path:'task/create',
-  component: CreateTaskComponent
+  component: CreateTaskComponent,
+},{
+  path:'task/edit',
+  component: EditTaskComponent,
 }
 ];
 
