@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HeaderService } from '../../templates/header/header.service';
 
 @Component({
   selector: 'app-update-task',
@@ -7,8 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UpdateTaskComponent implements OnInit {
 
-  constructor() { }
+  constructor(private headerS:HeaderService) {
 
+  }
   ngOnInit(): void {
   }
 

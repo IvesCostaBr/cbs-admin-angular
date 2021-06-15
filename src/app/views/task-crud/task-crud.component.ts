@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Router } from '@angular/router';
 import { TaskService } from 'src/app/components/task/task.service';
+import { HeaderService } from 'src/app/components/templates/header/header.service';
 @Component({
   selector: 'app-task-crud',
   templateUrl: './task-crud.component.html',
@@ -10,7 +11,16 @@ export class TaskCrudComponent implements OnInit {
 
 
 
-  constructor(private router: Router, private api: TaskService) { }
+  constructor(private router: Router,
+    private api: TaskService,
+    private headers:HeaderService) {
+      headers.headerSet = {
+        title:'Tarefas',
+        icon:'task',
+        routUrl : '/task',
+
+  }
+  }
 
   ngOnInit(): void {
   }

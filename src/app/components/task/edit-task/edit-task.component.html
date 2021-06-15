@@ -1,1 +1,19 @@
-<p>edit-task works!</p>
+<!--<h3 [id]="variavel">Create</h3>--><!--event binds  ligações de evento-->
+<mat-card>
+  <mat-card-title>Nova Tarefa</mat-card-title>
+    <form>
+      <mat-form-field>
+          <input matInput placeholder="Titulo" [(ngModel)]="taskUni.title" name="title">
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput placeholder="Description" [(ngModel)]="taskUni.description" name="description">
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput placeholder="Digite o Id do Funcionario" [(ngModel)]="taskUni.owner" name="owner">
+      </mat-form-field>
+    </form>
+    <button mat-raised-button color="primary" (click)="updateTask()">Atualizar</button>
+    <button mat-raised-button color="warn" >Deletar</button>
+  <button mat-raised-button color="success>" (click)="backPage()" >Voltar</button> <!--Do jeito que está ele não vai fazer um bind ou ligar essa função com o arquivo TS de origin-->
+</mat-card>
+

@@ -19,13 +19,13 @@ const routes: Routes = [{
   path:'task/create',
   component: CreateTaskComponent,
 },{
-  path:'task/edit:id',
+  path:'task/edit/:id',
   component: EditTaskComponent,
 },{
   path:'task/list',
   component: TaskReadyComponent,
 },{
-  path:'task/remove',
+  path:'task/remove/:id',
   component:RemoveTaskComponent,
 }
 ];
