@@ -30,7 +30,7 @@ import { FormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { TaskReadyComponent } from './components/task/task-ready/task-ready.component';
-import { ListTaskComponent } from './list-task/list-task.component';
+import { ListTaskComponent } from './components/task/list-task/list-task.component';
 import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';

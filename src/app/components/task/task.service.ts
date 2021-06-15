@@ -22,6 +22,18 @@ export class TaskService {
     return this.http.get<TaskModel[]>(this.url + 'task-api/')
   }
 
+  getTaskFromId(id:string) : Observable<TaskModel> {
+
+    const urlBase = `${this.url}/task/${id}/` ;
+
+    return this.http.get<TaskModel>(urlBase)
+  }
+
+  updateTask(task: TaskModel) : Observable<TaskModel> {
+    const urlBase = `${this.url}/task/${task.id}/` ;
+    return this.http.put<TaskModel>(urlBase, task)
+  }
+
   showThing(msg:string) :void {
     this.snackBar.open(msg, 'X', {
       duration:10000,

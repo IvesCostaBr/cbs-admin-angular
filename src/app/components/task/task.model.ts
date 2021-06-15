@@ -1,6 +1,6 @@
 export interface TaskModel {
 
-    id?: number
+    id: number
     title: string
     description: string
     owner: number

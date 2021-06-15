@@ -12,6 +12,7 @@ import { TaskService } from '../task.service';
 export class CreateTaskComponent implements OnInit {
 
   taskModel:TaskModel = {
+    id : 0,
     title:'',
     description:'',
     owner:0,
