@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { TaskCrudComponent } from 'src/app/views/task-crud/task-crud.component';
+import { TaskModel } from '../task.model';
 import { TaskService } from '../task.service';
 
 
@@ -11,7 +11,11 @@ import { TaskService } from '../task.service';
 })
 export class CreateTaskComponent implements OnInit {
 
-  variavel = 'Módulo de Cadastro de Tarefas';
+  taskModel:TaskModel = {
+    title:'',
+    description:'',
+    owner:0,
+  }
 
   constructor(private taskSevice:TaskService, private router:Router) { }
 
@@ -20,7 +24,11 @@ export class CreateTaskComponent implements OnInit {
   }
 
   createTaskAction(){
-    this.taskSevice.showThing("Operação excutado com succeso");
+    this.taskSevice.createTask(this.taskModel).subscribe(()=> {
+      this.taskSevice.showThing("Tarefa Criada com successo");
+      this.router.navigate(['/task']);
+    })
+
   }
 
     //metodo que está sendo chamado através bindign de atributo

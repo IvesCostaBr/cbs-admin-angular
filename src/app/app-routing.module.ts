@@ -6,6 +6,7 @@ import {TaskCrudComponent} from './views/task-crud/task-crud.component'
 
 import {CreateTaskComponent} from './components/task/create-task/create-task.component';
 import { EditTaskComponent } from './components/task/edit-task/edit-task.component';
+import { TaskReadyComponent } from './components/task/task-ready/task-ready.component'
 
 const routes: Routes = [{
   path:"",
@@ -19,6 +20,9 @@ const routes: Routes = [{
 },{
   path:'task/edit',
   component: EditTaskComponent,
+},{
+  path:'task/list',
+  component: TaskReadyComponent,
 }
 ];
 

@@ -26,6 +26,15 @@ import { UpdateTaskComponent } from './components/task/update-task/update-task.c
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 
+import { FormsModule } from '@angular/forms';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { TaskReadyComponent } from './components/task/task-ready/task-ready.component';
+import { ListTaskComponent } from './list-task/list-task.component';
+import { MatTableModule } from '@angular/material/table';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatSortModule } from '@angular/material/sort';
+
 
 @NgModule({
   declarations: [
@@ -40,6 +49,8 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
     RemoveTaskComponent,
     EditTaskComponent,
     UpdateTaskComponent,
+    TaskReadyComponent,
+    ListTaskComponent,
   ],
   imports: [ //TODO:sitemas de modulo padrão , quando importamos lá em cima temos que registralos em imports
     BrowserModule,
@@ -52,6 +63,13 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
     MatCardModule,
     MatButtonModule,
     MatSnackBarModule,
+    MatInputModule,
+    MatFormFieldModule,
+    FormsModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule
+
 
   ],
   providers: [],

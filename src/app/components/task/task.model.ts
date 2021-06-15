@@ -1,7 +1,8 @@
-export interface Task {
+export interface TaskModel {
 
     id?: number
     title: string
     description: string
-    owner: string
+    owner: number
+
 }

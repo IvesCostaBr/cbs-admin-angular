@@ -1,8 +1,20 @@
-<h3 [id]="variavel">Create</h3>
-<!--event binds  ligações de evento-->
-<button mat-raised-button color="primary" (click)="createTaskAction()">Aperte</button><br>
-<br>
-<button mat-raised-button color="warn" (click)="backPage()" >Voltar</button> <!--Do jeito que está ele não vai fazer um bind ou ligar essa função com o arquivo TS de origin-->
-<br>
+<!--<h3 [id]="variavel">Create</h3>--><!--event binds  ligações de evento-->
+<mat-card>
+  <mat-card-title>Nova Tarefa</mat-card-title>
+    <form>
+      <mat-form-field>
+          <input matInput placeholder="Titulo" [(ngModel)]="taskModel.title" name="title">
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput placeholder="Description" [(ngModel)]="taskModel.description" name="description">
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput placeholder="Digite o Id do Funcionario" [(ngModel)]="taskModel.owner" name="owner">
+      </mat-form-field>
+    </form>
 
-<p> Formulario de Produtos</p>
+    <button mat-raised-button color="primary" (click)="createTaskAction()">Criar Tarefa</button>
+  <button mat-raised-button color="warn" (click)="backPage()" >Voltar</button> <!--Do jeito que está ele não vai fazer um bind ou ligar essa função com o arquivo TS de origin-->
+</mat-card>
+
+
